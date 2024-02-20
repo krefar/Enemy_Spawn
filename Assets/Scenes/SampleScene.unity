@@ -467,9 +467,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30669fcbcc6407341b4c501fec7c8a13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enabled: 1
   _repeatRate: 2
   _enemyPrefab: {fileID: -2653672899765221137, guid: 3c14d08f858187e4699ba38e89beb0b8, type: 3}
+  _spawnPoints:
+  - {x: 0, y: 0, z: 0}
+  - {x: 2, y: 0, z: 0}
+  - {x: -2, y: 0, z: 0}
+  - {x: 0, y: 0, z: 2}
+  - {x: 0, y: 0, z: -2}
 --- !u!4 &585817239
 Transform:
   m_ObjectHideFlags: 0

@@ -4,20 +4,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private EnemySpawner _spawner;
-
-    public void Init(EnemySpawner spawner)
+    public void Init(Vector3 spawnPoint)
     {
-        _spawner = spawner;
-
-        transform.position = _spawner.transform.position;
-        transform.rotation = _spawner.transform.rotation;
-
+        transform.position = spawnPoint;
         this.gameObject.SetActive(true);
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void SetDirection(Quaternion direction)
     {
-        _spawner.Release(this);
+        transform.rotation = direction;
     }
 }

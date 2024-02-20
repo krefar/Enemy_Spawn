@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class WaypointMover : MonoBehaviour
@@ -9,7 +7,7 @@ public class WaypointMover : MonoBehaviour
 
     private int _currentWaypoint = 0;
 
-    void Update()
+    private void Update()
     {
         if (transform.position == _waypoints[_currentWaypoint].position)
         {

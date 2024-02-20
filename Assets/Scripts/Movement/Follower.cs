@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Follower : MonoBehaviour
@@ -7,7 +5,7 @@ public class Follower : MonoBehaviour
     [SerializeField] float _speed;
     [SerializeField] Transform _target;
 
-    void Update()
+    private void Update()
     {
         var step = _speed * Time.deltaTime;
 
